@@ -1,0 +1,19 @@
+.{
+    .name = "zig-wii-sdl2",
+    .version = "2.28.0", // match the downstream SDL2 version
+    .dependencies = .{
+        .sdl_ogc = .{
+            // branch: ogc-sdl-2.28
+            .url = "https://github.com/devkitPro/SDL/archive/refs/heads/ogc-sdl-2.28.zip",
+            .hash = "1220d79d0c272796c654ebbd866cdacb6ec72bb1219e88a0c73fccdf206792f7798e",
+        },
+    },
+    .paths = .{
+        "LICENSE",
+        "README.md",
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "build_sdl.sh",
+    },
+}
